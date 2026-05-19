@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triply | Voos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo Triply" class="brand-logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a class="active" href="voos.html">Voos</a>
+        <a href="hoteis.html">Hotéis</a>
+        <a href="pacotes.html">Pacotes</a>
+        <a href="cruzeiros.html">Cruzeiros</a>
+        <a href="aluguel.html">Aluguel</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="#">Entrar</a>
+        <a class="btn btn-primary" href="#">Criar conta</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80');">
+    <div class="container">
+
+      <div class="hero-inner">
+
+        <div class="hero-text">
+          <p class="hero-badge">✈️ Voos nacionais e internacionais</p>
+
+          <h1>Escolha o voo perfeito com a <span>Triply</span>.</h1>
+
+          <p class="hero-subtitle">
+            Compare destinos, datas e encontre passagens com descontos exclusivos.
+            Planeje sua viagem com conforto e praticidade.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>+200</strong>
+              <span>companhias</span>
+            </div>
+
+            <div class="stat">
+              <strong>+90</strong>
+              <span>países</span>
+            </div>
+
+            <div class="stat">
+              <strong>100%</strong>
+              <span>seguro</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEARCH BOX -->
+        <div class="search-box">
+          <div class="search-tabs">
+            <button class="tab active" type="button">✈️ Ida e volta</button>
+            <button class="tab" type="button">🛫 Só ida</button>
+            <button class="tab" type="button">💼 Executiva</button>
+          </div>
+
+          <form class="search-form">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="origem">Origem</label>
+                <input id="origem" type="text" placeholder="Ex: Joinville" required>
+              </div>
+
+              <div class="form-group">
+                <label for="destino">Destino</label>
+                <input id="destino" type="text" placeholder="Ex: Lisboa" required>
+              </div>
+            </div>
+
+            <div class="form-row three">
+              <div class="form-group">
+                <label for="ida">Data ida</label>
+                <input id="ida" type="date" required>
+              </div>
+
+              <div class="form-group">
+                <label for="volta">Data volta</label>
+                <input id="volta" type="date">
+              </div>
+
+              <div class="form-group">
+                <label for="classe">Classe</label>
+                <select id="classe">
+                  <option>Econômica</option>
+                  <option>Executiva</option>
+                  <option>Primeira classe</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn btn-search" type="submit">Buscar voos</button>
+
+            <p class="search-note">
+              Você receberá as melhores opções com base no destino e datas escolhidas.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Ofertas de voos em destaque</h2>
+        <p>Confira os destinos mais buscados com preços promocionais.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-20%</span>
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=80" alt="Dubai">
+          </div>
+
+          <div class="card-body">
+            <h3>Dubai</h3>
+            <p>Passagem ida e volta • Promoção limitada</p>
+
+            <div class="card-footer">
+              <strong>R$ 4.999</strong>
+              <a href="contato.html" class="btn btn-dark">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-15%</span>
+            <img src="https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1400&q=80" alt="Itália">
+          </div>
+
+          <div class="card-body">
+            <h3>Itália</h3>
+            <p>Passagem internacional • Alta procura</p>
+
+            <div class="card-footer">
+              <strong>R$ 3.899</strong>
+              <a href="contato.html" class="btn btn-dark">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-30%</span>
+            <img src="https://images.unsplash.com/photo-1544989164-31dc3c645987?auto=format&fit=crop&w=1400&q=80" alt="Paris">
+          </div>
+
+          <div class="card-body">
+            <h3>Paris</h3>
+            <p>Voo + conforto • Melhor custo-benefício</p>
+
+            <div class="card-footer">
+              <strong>R$ 4.199</strong>
+              <a href="contato.html" class="btn btn-dark">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION -->
+  <section class="section section-muted">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Voos nacionais em alta</h2>
+        <p>Destinos brasileiros perfeitos para curtir férias ou feriados.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-25%</span>
+            <img src="https://images.unsplash.com/photo-1594069758873-e79e9075eb7d?auto=format&fit=crop&w=1400&q=80" alt="Rio de Janeiro">
+          </div>
+
+          <div class="card-body">
+            <h3>Rio de Janeiro</h3>
+            <p>Passagem ida e volta • Destino clássico</p>
+
+            <div class="card-footer">
+              <strong>R$ 699</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-18%</span>
+            <img src="https://images.unsplash.com/photo-1544989164-8c02d1f2f0f8?auto=format&fit=crop&w=1400&q=80" alt="Salvador">
+          </div>
+
+          <div class="card-body">
+            <h3>Salvador</h3>
+            <p>Promoção verão • Melhor época para viajar</p>
+
+            <div class="card-footer">
+              <strong>R$ 899</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-22%</span>
+            <img src="https://images.unsplash.com/photo-1622495482155-2c4d5b4a52f5?auto=format&fit=crop&w=1400&q=80" alt="Gramado">
+          </div>
+
+          <div class="card-body">
+            <h3>Gramado</h3>
+            <p>Inverno perfeito • Cidade romântica</p>
+
+            <div class="card-footer">
+              <strong>R$ 599</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Triply Logo" class="footer-logo">
+        <p>Triply é uma plataforma completa para viagens, pacotes e hospedagens com suporte profissional.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Triply</h4>
+        <a href="index.html">Início</a>
+        <a href="pacotes.html">Pacotes</a>
+        <a href="cruzeiros.html">Cruzeiros</a>
+        <a href="contato.html">Contato</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <a href="voos.html">Voos</a>
+        <a href="hoteis.html">Hotéis</a>
+        <a href="aluguel.html">Aluguel</a>
+        <a href="cruzeiros.html">Cruzeiros</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Redes</h4>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">YouTube</a>
+        <a href="#">LinkedIn</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Triply - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

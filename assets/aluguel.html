@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triply | Aluguel de Lugares</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo Triply" class="brand-logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="voos.html">Voos</a>
+        <a href="hoteis.html">Hotéis</a>
+        <a href="pacotes.html">Pacotes</a>
+        <a href="cruzeiros.html">Cruzeiros</a>
+        <a class="active" href="aluguel.html">Aluguel</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="#">Entrar</a>
+        <a class="btn btn-primary" href="#">Criar conta</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80');">
+    <div class="container">
+
+      <div class="hero-inner">
+
+        <div class="hero-text">
+          <p class="hero-badge">🏠 Aluguel de casas e apartamentos</p>
+
+          <h1>Alugue lugares incríveis com a <span>Triply</span>.</h1>
+
+          <p class="hero-subtitle">
+            Encontre casas, chalés, apartamentos e hospedagens para temporada com conforto,
+            segurança e suporte Triply.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>+2.000</strong>
+              <span>imóveis</span>
+            </div>
+
+            <div class="stat">
+              <strong>Segurança</strong>
+              <span>garantida</span>
+            </div>
+
+            <div class="stat">
+              <strong>Conforto</strong>
+              <span>premium</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEARCH BOX -->
+        <div class="search-box">
+          <div class="search-tabs">
+            <button class="tab active" type="button">🏠 Casa</button>
+            <button class="tab" type="button">🏢 Apartamento</button>
+            <button class="tab" type="button">🌲 Chalé</button>
+          </div>
+
+          <form class="search-form">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="local">Local</label>
+                <input id="local" type="text" placeholder="Ex: Florianópolis" required>
+              </div>
+
+              <div class="form-group">
+                <label for="tipo">Tipo</label>
+                <select id="tipo">
+                  <option>Casa</option>
+                  <option>Apartamento</option>
+                  <option>Chalé</option>
+                  <option>Cabana</option>
+                  <option>Luxo</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row three">
+              <div class="form-group">
+                <label for="entrada">Entrada</label>
+                <input id="entrada" type="date" required>
+              </div>
+
+              <div class="form-group">
+                <label for="saida">Saída</label>
+                <input id="saida" type="date" required>
+              </div>
+
+              <div class="form-group">
+                <label for="pessoas">Pessoas</label>
+                <select id="pessoas">
+                  <option>1 pessoa</option>
+                  <option>2 pessoas</option>
+                  <option>3 pessoas</option>
+                  <option>4 pessoas</option>
+                  <option>5+ pessoas</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn btn-search" type="submit">Buscar lugares</button>
+
+            <p class="search-note">
+              Encontre acomodações com base nas datas e no destino desejado.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTAQUES -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Lugares em destaque</h2>
+        <p>Os imóveis mais procurados com conforto e ótima localização.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">Luxo</span>
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1400&q=80" alt="Apartamento luxo">
+          </div>
+
+          <div class="card-body">
+            <h3>Apartamento Luxo</h3>
+            <p>Vista para o mar • 2 quartos • Wi-Fi e piscina</p>
+
+            <div class="card-footer">
+              <strong>R$ 399/noite</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-25%</span>
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=80" alt="Casa de praia">
+          </div>
+
+          <div class="card-body">
+            <h3>Casa de Praia</h3>
+            <p>Área gourmet • Piscina • Perfeita para família</p>
+
+            <div class="card-footer">
+              <strong>R$ 499/noite</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">Top</span>
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=80" alt="Cabana moderna">
+          </div>
+
+          <div class="card-body">
+            <h3>Cabana Moderna</h3>
+            <p>Montanha • Natureza • Ideal para casal</p>
+
+            <div class="card-footer">
+              <strong>R$ 299/noite</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ALUGUÉIS BRASIL -->
+  <section class="section section-muted">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Aluguéis pelo Brasil</h2>
+        <p>Destinos incríveis para curtir férias ou fim de semana.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-18%</span>
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=80" alt="Casa Gramado">
+          </div>
+
+          <div class="card-body">
+            <h3>Chalé em Gramado</h3>
+            <p>Lareira • Vista linda • Café incluso</p>
+
+            <div class="card-footer">
+              <strong>R$ 259/noite</strong>
+              <a href="contato.html" class="btn btn-dark">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">Promo</span>
+            <img src="https://images.unsplash.com/photo-1572120360610-d971b9b78825?auto=format&fit=crop&w=1400&q=80" alt="Casa Florianópolis">
+          </div>
+
+          <div class="card-body">
+            <h3>Casa em Florianópolis</h3>
+            <p>Praia próxima • Piscina • 3 quartos</p>
+
+            <div class="card-footer">
+              <strong>R$ 449/noite</strong>
+              <a href="contato.html" class="btn btn-dark">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">Top</span>
+            <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1400&q=80" alt="Apartamento Rio">
+          </div>
+
+          <div class="card-body">
+            <h3>Apartamento no Rio</h3>
+            <p>Copacabana • 2 quartos • Vista incrível</p>
+
+            <div class="card-footer">
+              <strong>R$ 379/noite</strong>
+              <a href="contato.html" class="btn btn-dark">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Triply Logo" class="footer-logo">
+        <p>Triply é uma plataforma completa para viagens, pacotes e hospedagens com suporte profissional.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Triply</h4>
+        <a href="index.html">Início</a>
+        <a href="pacotes.html">Pacotes</a>
+        <a href="cruzeiros.html">Cruzeiros</a>
+        <a href="contato.html">Contato</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <a href="voos.html">Voos</a>
+        <a href="hoteis.html">Hotéis</a>
+        <a href="aluguel.html">Aluguel</a>
+        <a href="cruzeiros.html">Cruzeiros</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Redes</h4>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">YouTube</a>
+        <a href="#">LinkedIn</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Triply - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

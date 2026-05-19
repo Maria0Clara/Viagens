@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triply | Pacotes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo Triply" class="brand-logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="voos.html">Voos</a>
+        <a href="hoteis.html">Hotéis</a>
+        <a class="active" href="pacotes.html">Pacotes</a>
+        <a href="cruzeiros.html">Cruzeiros</a>
+        <a href="aluguel.html">Aluguel</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="#">Entrar</a>
+        <a class="btn btn-primary" href="#">Criar conta</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=1600&q=80');">
+    <div class="container">
+
+      <div class="hero-inner">
+
+        <div class="hero-text">
+          <p class="hero-badge">🎟️ Pacotes completos</p>
+
+          <h1>Economize mais com os pacotes da <span>Triply</span>.</h1>
+
+          <p class="hero-subtitle">
+            Passagem + hotel + experiências com descontos exclusivos.
+            Perfeito para quem quer viajar sem preocupação.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>-50%</strong>
+              <span>em ofertas</span>
+            </div>
+
+            <div class="stat">
+              <strong>12x</strong>
+              <span>parcelamento</span>
+            </div>
+
+            <div class="stat">
+              <strong>VIP</strong>
+              <span>suporte</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEARCH BOX -->
+        <div class="search-box">
+          <div class="search-tabs">
+            <button class="tab active" type="button">🎟️ Pacote</button>
+            <button class="tab" type="button">🏨 Hotel + Voo</button>
+            <button class="tab" type="button">👨‍👩‍👧 Família</button>
+          </div>
+
+          <form class="search-form">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="origem">Origem</label>
+                <input id="origem" type="text" placeholder="Ex: Curitiba" required>
+              </div>
+
+              <div class="form-group">
+                <label for="destino">Destino</label>
+                <input id="destino" type="text" placeholder="Ex: Disney" required>
+              </div>
+            </div>
+
+            <div class="form-row three">
+              <div class="form-group">
+                <label for="ida">Data ida</label>
+                <input id="ida" type="date" required>
+              </div>
+
+              <div class="form-group">
+                <label for="volta">Data volta</label>
+                <input id="volta" type="date">
+              </div>
+
+              <div class="form-group">
+                <label for="tipo">Tipo</label>
+                <select id="tipo">
+                  <option>Pacote completo</option>
+                  <option>Romântico</option>
+                  <option>Família</option>
+                  <option>Luxo</option>
+                  <option>Econômico</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn btn-search" type="submit">Buscar pacotes</button>
+
+            <p class="search-note">
+              Nossa equipe analisará suas datas e enviará as melhores opções.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PACOTES EM DESTAQUE -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Pacotes em destaque</h2>
+        <p>Os pacotes mais procurados e mais bem avaliados da Triply.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- DISNEY -->
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">Premium</span>
+            <img src="https://images.unsplash.com/photo-1561488111-5d800fd56c8d?auto=format&fit=crop&w=1400&q=80" alt="Disney Orlando">
+          </div>
+
+          <div class="card-body">
+            <h3>Disney Orlando</h3>
+            <p>7 dias / 6 noites • Hotel + voo + suporte Triply</p>
+
+            <div class="card-footer">
+              <strong>R$ 7.999</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARIBE -->
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-40%</span>
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1400&q=80" alt="Caribe Resort">
+          </div>
+
+          <div class="card-body">
+            <h3>Caribe Resort</h3>
+            <p>5 dias / 4 noites • All Inclusive + voo incluso</p>
+
+            <div class="card-footer">
+              <strong>R$ 4.199</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PARIS -->
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-30%</span>
+            <img src="https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=1400&q=80" alt="Paris">
+          </div>
+
+          <div class="card-body">
+            <h3>Paris Romântica</h3>
+            <p>6 dias / 5 noites • Hotel 4★ + passagem</p>
+
+            <div class="card-footer">
+              <strong>R$ 6.899</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PACOTES INTERNACIONAIS -->
+  <section class="section section-muted">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Pacotes internacionais</h2>
+        <p>Viaje para os destinos mais desejados do mundo com ofertas exclusivas.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-25%</span>
+            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1400&q=80" alt="Japão">
+          </div>
+
+          <div class="card-body">
+            <h3>Japão</h3>
+            <p>8 dias / 7 noites • Hotel 4★ + voo incluso</p>
+
+            <div class="card-footer">
+              <strong>R$ 8.499</strong>
+              <a href="contato.html" class="btn btn-dark">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-18%</span>
+            <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3f?auto=format&fit=crop&w=1400&q=80" alt="Noronha">
+          </div>
+
+          <div class="card-body">
+            <h3>Maldivas</h3>
+            <p>6 dias / 5 noites • Resort + passagem</p>
+
+            <div class="card-footer">
+              <strong>R$ 9.299</strong>
+              <a href="contato.html" class="btn btn-dark">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-22%</span>
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=80" alt="Nova York">
+          </div>
+
+          <div class="card-body">
+            <h3>Nova York</h3>
+            <p>5 dias / 4 noites • Hotel + voo + city tour</p>
+
+            <div class="card-footer">
+              <strong>R$ 6.499</strong>
+              <a href="contato.html" class="btn btn-dark">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PACOTES NACIONAIS -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Pacotes nacionais</h2>
+        <p>Viaje pelo Brasil com preços acessíveis e destinos incríveis.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-20%</span>
+            <img src="https://images.unsplash.com/photo-1594069758873-e79e9075eb7d?auto=format&fit=crop&w=1400&q=80" alt="Rio de Janeiro">
+          </div>
+
+          <div class="card-body">
+            <h3>Rio de Janeiro</h3>
+            <p>4 dias / 3 noites • Hotel + voo incluso</p>
+
+            <div class="card-footer">
+              <strong>R$ 1.299</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">-15%</span>
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1400&q=80" alt="Fernando de Noronha">
+          </div>
+
+          <div class="card-body">
+            <h3>Fernando de Noronha</h3>
+            <p>5 dias / 4 noites • Pousada + voo incluso</p>
+
+            <div class="card-footer">
+              <strong>R$ 3.699</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <span class="tag">Top</span>
+            <img src="https://images.unsplash.com/photo-1622495482155-2c4d5b4a52f5?auto=format&fit=crop&w=1400&q=80" alt="Gramado">
+          </div>
+
+          <div class="card-body">
+            <h3>Gramado</h3>
+            <p>3 dias / 2 noites • Hotel + passeios inclusos</p>
+
+            <div class="card-footer">
+              <strong>R$ 1.099</strong>
+              <a href="contato.html" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Triply Logo" class="footer-logo">
+        <p>Triply é uma plataforma completa para viagens, pacotes e hospedagens com suporte profissional.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Triply</h4>
+        <a href="index.html">Início</a>
+        <a href="pacotes.html">Pacotes</a>
+        <a href="cruzeiros.html">Cruzeiros</a>
+        <a href="contato.html">Contato</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <a href="voos.html">Voos</a>
+        <a href="hoteis.html">Hotéis</a>
+        <a href="aluguel.html">Aluguel</a>
+        <a href="cruzeiros.html">Cruzeiros</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Redes</h4>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">YouTube</a>
+        <a href="#">LinkedIn</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Triply - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
