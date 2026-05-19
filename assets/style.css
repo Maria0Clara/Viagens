@@ -101,7 +101,9 @@ img {
 }
 
 .brand-logo {
-  height: 44px;
+  height: 65px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav {
